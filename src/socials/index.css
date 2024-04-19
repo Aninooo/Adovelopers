@@ -1,10 +1,11 @@
 .footer {
     background-color: #ffffff; 
-    padding: 15px;
+    padding: 12px;
     position: fixed; 
     bottom: 0;
     left: 0; 
     width: 100%; 
+    right: -20px;
 }
 
   .social-icons-container {

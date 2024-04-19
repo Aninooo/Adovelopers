@@ -5,6 +5,7 @@ import Group86Icon from "../assets/Group 86.svg";
 import Group87Icon from "../assets/Group 87.svg";
 import Group88Icon from "../assets/Group 88.svg";
 
+
 function Social() {
   return (
     <footer className="footer">

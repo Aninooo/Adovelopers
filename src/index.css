@@ -2,12 +2,14 @@ body,
 ul {
   margin: 0;
   padding: 0;
+
 }
 
 body {
-  background-color: black;
+  background-color: transparent;
   color: white; 
   font-family: 'Poppins', sans-serif;
+ 
 }
 
 .container {
@@ -83,8 +85,8 @@ nav ul li a:hover {
   text-decoration: none;
   font-weight: 600px;
   color: white; 
-  margin-right: 10px; 
-  font-size: 14px;
+  margin-right: -40px; 
+  font-size: 13px;
 }
 .get-started a:hover {
   color: gray; 
@@ -113,6 +115,8 @@ nav ul li a:hover {
 .bell-icon {
   color: white;
   text-decoration: none;
+  position: absolute;
+  right: -40px;
 }
 
 .bell-circle {
@@ -125,15 +129,15 @@ nav ul li a:hover {
   background-color: #2491F6;
 }
 .top-section {
-  background: #00008b;
+  background-color: rgba(0, 0, 0, 0.181); 
   padding: 1px 2px;
   margin-bottom: 20px;
   width: 100%; 
-  position: fixed; 
+  position: sticky; 
   top: 0; 
-  z-index: 1000; 
+  z-index: 100; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
-
 .empowering{
   font-family: 'Jakarta Sans', sans-serif;
   font-weight: 700;
@@ -142,19 +146,19 @@ nav ul li a:hover {
   font-size: 28px;
   margin-left: 2in;
   position: relative;
-  top: 200px;
+  top: 130px;
 }
 .empoweringSub{
   font-family: 'Jakarta Sans', sans-serif;
   font-size: 16px;
   margin-left: 2in;
   position: relative;
-  top: 200px;
+  top: 130px;
 }
 .image-right {
   position: fixed;
-  top: 80px;
-  right: 200px;
+  top: 0;
+  right: 55px;
   width: 563px;
 }
 .image-right img {
@@ -162,12 +166,14 @@ nav ul li a:hover {
   height: auto;
 }
 .dropdown-menu {
-  display: none;
+  display: block;
   position: absolute;
+  top: 100%;
+  left: 0;
   background-color: #f9f9f9;
   min-width: 180px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 1100; 
 }
 
 .dropdown-menu li {
@@ -189,4 +195,10 @@ nav ul li a:hover {
 
 .dropdown-menu li:hover {
   background-color: #f1f1f1;
+}
+.background-container {
+  background-image: url('./assets/Rectangle 1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
